@@ -22,4 +22,8 @@ class Dataset(models.Model):
     spend = models.DecimalField(max_digits=8, decimal_places=2)
     revenue = models.DecimalField(max_digits=6, decimal_places=2)
 
+    class Meta:
+        verbose_name = 'Dataset'
 
+    def get_cpi(self):
+        return round(self.spend/self.installs, 2)
