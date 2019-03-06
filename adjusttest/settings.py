@@ -82,14 +82,24 @@ WSGI_APPLICATION = 'adjusttest.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
+#
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'adjust',
+#         'USER': 'adjust_app_user',
+#         'PASSWORD': 'password123',
+#         'HOST': 'localhost',
+#     }
+# }
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'adjust',
-        'USER': 'adjust_app_user',
-        'PASSWORD': 'password123',
-        'HOST': 'localhost',
+        'NAME': 'dbfjga2pf04fp3',
+        'USER': 'ospbtohvrmaooq',
+        'PASSWORD': '855ab90429d7b7aed4f3357eac1005dc178212ab7ee729ef60124dd9c1961572',
+        'HOST': 'ec2-174-129-224-157.compute-1.amazonaws.com',
     }
 }
 
