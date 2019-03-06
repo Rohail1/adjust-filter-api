@@ -1,1 +1,1 @@
-web: gunicorn adjusttest.wsgi --log-file -
+web: gunicorn adjusttest.wsgi --log-file
