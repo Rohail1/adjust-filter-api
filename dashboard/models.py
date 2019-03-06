@@ -25,5 +25,6 @@ class Dataset(models.Model):
     class Meta:
         verbose_name = 'Dataset'
 
+    @property
     def get_cpi(self):
         return round(self.spend/self.installs, 2)
